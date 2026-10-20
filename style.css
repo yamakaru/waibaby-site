@@ -1,7 +1,7 @@
 /* Màu thương hiệu: --brand lấy từ logo WAI (#5f9f32). Đổi 1 dòng này để đổi màu toàn site. */
 :root{--brand:#5f9f32;--m:var(--brand);--md:#4a8424;--y:#ffe08a;--bg:#f4f9ef;--ink:#2d3b36}
 *{box-sizing:border-box}body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-img{max-width:100%;display:block}a{color:var(--md)}.wrap{max-width:1100px;margin:auto;padding:0 18px}
+img{max-width:100%;height:auto;display:block}a{color:var(--md)}.wrap{max-width:1100px;margin:auto;padding:0 18px}
 header{position:sticky;top:0;background:#fffe;backdrop-filter:blur(8px);z-index:9;box-shadow:0 2px 12px #0001}
 .hd{display:flex;align-items:center;justify-content:space-between;height:62px}.logo{font-weight:900;font-size:30px;color:var(--md);text-decoration:none;letter-spacing:-1px}.logo span{color:var(--y)}
 nav{display:flex;gap:4px}nav a{text-decoration:none;color:var(--ink);font-weight:700;padding:8px 12px;border-radius:20px}nav a.on,nav a:hover{background:#eaf5e0;color:var(--md)}
