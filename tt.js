@@ -1,2 +1,4 @@
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a||!window.ttq)return;var h=a.getAttribute('href');if(h.indexOf('tel:')==0)ttq.track('Contact',{content_name:'Hotline'});else if(h.indexOf('zalo.me')>-1)ttq.track('Contact',{content_name:'Zalo'});});
 document.addEventListener('submit',function(e){var f=e.target;if(f.dataset.tt||!window.ttq)return;e.preventDefault();f.dataset.tt=1;ttq.track('SubmitForm',{content_name:'Dang ky dai ly'});ttq.track('Lead',{content_name:'Dang ky dai ly'});setTimeout(function(){f.submit();},600);});
+if(/san-pham/.test(location.pathname)&&window.ttq){ttq.track('ViewContent',{content_type:'product',content_name:'San pham Wai'});}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="san-pham.html#"]');if(a&&window.ttq)ttq.track('ViewContent',{content_type:'product',content_id:a.getAttribute('href').split('#')[1]});});
